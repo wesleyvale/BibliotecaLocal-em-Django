@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Biblioteca pessoal. Página inicial</h1>
+  <p>Blibioteca pessoal, website desenvolvido por Wesley Lima D.Vale <em>Django</em>!</p>
+  <h2>Conteudo dinamico</h2>
+  <p>A biblioteca possui as seguintes contagens de registros:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}
